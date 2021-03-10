@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { TodoListItem } from './TodoListItem';
 import { TodoList } from './TodoList';
 import { AddTodoForm } from './AddTodoForm';
 import { HostList } from './HostList';
-import { MainContainer } from './pkg/clarity-react/src/layout/main-container/MainContainer';
+import {MainContainer} from "@dell/clarity-react/dist/layout/main-container/MainContainer";
 
 const initialState = {
 };
@@ -20,7 +20,7 @@ export default class Main extends React.Component<MainPageProps> {
     readonly state: MainPageState = initialState;
     render(){
         return(
-            <MainContainer>
+            <MainContainer title="Title">
                 Hello
             </MainContainer>
         );
